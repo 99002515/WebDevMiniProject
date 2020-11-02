@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Add Employee </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><strong><a href="index.html">
+					EMPLOYEE PAYROLL MANAGEMENT SYSTEM</a></strong></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="AddEmp.html">Add Employee</a></li>
+                        <li><a href="elements.html">About Us</a></li>
+                        <li><a href="generic.html">Log Out</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>Welcome To</h2>
+						<p>Employee Payroll Management System</p>
+					</header>
+
+					<a href="#" class="image fit"><img src="images/Image2.jpeg" alt="" /></a>
+					<script>
+                        function validate(){
+                            var username=document.getElementById('username').value;
+                            var Eid=document.getElementById('Eid').value;
+                            var accno=document.getElementById('accno').value;
+                            var ifsc=document.getElementById('ifsc').value;
+                            var phone=document.getElementById('pno').value;
+                            var email=document.getElementById('email').value;
+                            
+                           
+                            if(username="" || username.length<3)
+                            {
+                                alert("Please enter the corret name");
+                            }
+                            else if(Eid=="" )
+                            {
+                                alert("Please enter the employee id");
+                
+                            }
+                            else if(accno=="")
+                            {
+                                alert("please enter the account number");
+                            }
+                            else if(ifsc=="")
+                            {
+                                alert("please enter the IFSC number");
+                            }
+                            else if(phone=="" || (!phone.match(/\d{10}/)))
+                            {
+                                alert("enter valid phone no");
+                            }
+                            else if(email==""|| (!email.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)))
+                            {
+                                alert("Please enter valid email");
+                            }
+                           
+                            else{
+                                alert("Employee Added Successfully");
+                            }
+                
+                        }
+                
+                    </script>
+ 
+</head>
+<body>
+  <form action="index.html">
+    <form >
+        <label for="">Employee Name</label>
+        <input type="text" name="text" id="username" placeholder="Enter your name"/><br/>
+        <label>Employee id</label>
+        <input type="text" name="text" id="Eid" placeholder="Enter Employee id"/><br/>
+        <label for="">Account number</label>
+        <input type="text" name="text" id="accno" placeholder="Enter the account number"/><br/>
+        <label for="">IFSC</label>
+        <input type="text" name="text" id="ifsc" placeholder="Enter the IFSC code"/><br/>
+        <label for="">Phone number</label>
+        <input type="numeric" name="pno" id="pno" placeholder="Enter your phone no"/><br/>
+        <label for="">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter email id"/><br/><br>
+       
+        <input type="submit" name="submit" value="ADD EMPLOYEE" id="submit" onclick="validate()"/>
+    </form>
+
+
+    <div class="container" style="background-color:#f1f1f1">
+      
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-facebook"></a></li>
+						<li><a href="#" class="icon fa-twitter"></a></li>
+						<li><a href="#" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+    </body>
+    <!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/AbhayKumarDhar/" class="icon fa-facebook"></a></li>
+						<li><a href="https://twitter.com/abhaykumardhar/" class="icon fa-twitter"></a></li>
+						<li><a href="https://www.instagram.com/abhaykumardhar/" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; AKD</li>
+						<li>Design: Abhay & Amrita</li>
+						<li>Backend: Girish & Abhay</li>
+					</ul>
+				</div>
+            </footer>
+    <!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+</html>

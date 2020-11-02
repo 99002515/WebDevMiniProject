@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Log In </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><strong>
+					EMPLOYEE PAYROLL MANAGEMENT SYSTEM</strong></h1>
+				<nav id="nav">
+					
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>Welcome To</h2>
+						<p>Employee Payroll Management System</p>
+					</header>
+
+					<a href="#" class="image fit"><img src="images/Image1.jpg" alt="" /></a>
+					<script>
+  function check()
+  {
+    var Username=document.getElementById('Username').value;
+    var password=document.getElementById('psw').value;
+    if(Username=="" )
+    {
+      alert("Please enter the user name");
+
+    }
+    else if(password=="")
+    { 
+      alert("please enter Password");
+    }
+  }
+</script>
+</head>
+<body>
+  <form action="index.html">
+
+  <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" id="username" required>
+
+      <label for="psw"><b>Password</b></label>
+	  <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+	  <br>
+        
+      <button type="submit" onclick="check()">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  </form>
+
+    <div class="container" style="background-color:#f1f1f1">
+      
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				<ul class="icons">
+					<li><a href="https://www.facebook.com/AbhayKumarDhar/" class="icon fa-facebook"></a></li>
+					<li><a href="https://twitter.com/abhaykumardhar/" class="icon fa-twitter"></a></li>
+					<li><a href="https://www.instagram.com/abhaykumardhar/" class="icon fa-instagram"></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; AKD</li>
+					<li>Design: Abhay & Amrita</li>
+					<li>Backend: Girish & Abhay</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
